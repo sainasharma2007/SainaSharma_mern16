@@ -1,156 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task2</title>
-    <style>
-        *{
-            margin: 0;
-        }
-        #parent{
-            background-color: beige;
-            width: 100%;
-            height: 100vh;
-            display: grid;
-            grid-template-areas: "H H H H H H H "
-            "H H H H H H H"
-            "H H H H H H H"
-            "SB C C C C C C"
-            "SB C C C C C C"
-            "SB C C C C C C"
-            "SB C C C C C C"
-            "SB C C C C C C";
-            border-radius: 12px;
-           
-         }
-         #header{
-            grid-area: H;
-            background-color: slategray;
-            margin: 1rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-end;
-         }
-         #sidebar{
-            grid-area: SB;
-            background-color: rgb(62, 100, 138);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-left: 1rem;
-            margin-bottom: 1rem;
-         }
-         #content{
-            grid-area: C;
-            background-color: rgb(24, 78, 132);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items:center;
-            margin-right: 1rem;
-            margin-bottom: 1rem;
-         }
-         #content1{
-            background-color: antiquewhite;
-            color: black;
-            padding: 1rem;
-            font-size: 20px;
-         }
-         #content2{
-            background-color: antiquewhite;
-            color: black;
-            padding: 1rem;
-             font-size: 20px;
-         }
-         #content3 b{
-            font-size: 2rem;
-            
-         } 
-          #content3 span{
-            font-size: 20px;
-           
-         }
-           
-         #content3{
-             background-color: bisque;
-            color: black;
-            padding: 1rem;
-         } 
-         
-         #content4 b{
-            font-size: 2rem;
-            
-         }
-         #content4 span{
-            font-size: 20px;
-           
-         }
-         #content4 {
-             background-color: bisque;
-            color: black;
-            padding: 1rem;
-         }
-         #content5 b{
-            font-size: 2rem;
-         }
-         #content5 span{
-            font-size: 20px;
-         }
-         #content5{
-            background-color: blanchedalmond;
-            color: black;
-            padding: 1rem;
-         }
-         #content6 b{
-              font-size: 2rem;
-         }
-         #content6 span{
-            font-size: 20px;
-         }
-         #content6{
-            background-color: blanchedalmond;
-            color: black;
-            padding: 1rem;
-         }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saina Sharma Resume</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-    </style>
+    .resume {
+      background: #fff;
+      width: 80%;
+      max-width: 800px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(184, 55, 55, 0.2);
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+    }
+
+    
+     .profile {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-bottom: 20px;
+    } 
+
+    
+
+    .profile h1 {
+      margin: 5px ;
+    }
+
+    
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #333;
+      width: fit-content;
+      padding-bottom: 3px;
+    }
+
+    .section p, .section li {
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div id="parent">
-        <div id="header">
-            <p style="font-size: 2rem;  color: black; background-color: azure;border-radius: 100%; padding: 1rem; position: fixed; left: 37rem; top: 2rem;"><b>Saina Sharma</b></p>
-            <h1 id="content1">Contact num.- 9958838046<br>
-            Email id- sainasharma961@gmail.com<br>
-            Linkdln id-<a href="https://www.linkedin.com/in/saina-sharma-b5a704379" target="_blank">click me</a></h1>
-            <h2 id="content2">Github id- sainasharma2007</h2>
-        </div>
-        <div id="sidebar">
-            <h3 id="content3"><b>ADDRESS</b><br><br>
-            <span>B-12, First Floor, Gagan Enclave, Ghaziabad</span></h3>
-            <h4 id="content4"><b>SKILLS</b><br><br>
-            <span>Technical Skills</span><br><br>
-            <ul style="font-size: 14px;" >Programming Languages: C, Python<br>
-             Development Basics: HTML, CSS<br>
-            Version Control: Git, Github<br><br></ul>
-            <span>Soft Skills</span><br><br>
-            <ul style="font-size: 14px;">Strong Communication Skills<br>
-            Leadership Qualities<br>
-            Adaptability<br></ul></h4>
-        </div>
-        <div id="content">
-          <h5 id="content5"><b>EDUCATION</b><br><br>
-         <span>10th ICSE- Holy Child School<br>
-            12th CBSE- KDB Public School<br>
-            B.Tech CSE-DS- ABES Institute Of Technology
-         </span></h5>
-          <h6 id="content6"><b>ORGANIZATION</b><br><br>
-         <span>Dr. APJ Abdul Kalam Technical University<br>
-         ABES Institute Of Technology<br>
-         Department CSE-DS</span></h6>
-        </div>
+  <div class="resume">
+    
+    
+    <div class="profile">
+      
+      <h1>Saina Sharma</h1>
+      <p><span>&#128231</span>sainasharma961@gmail.com | <span>&#128241</span> +91-9958838046</p>
+      <p><span>&#128187</span> https://github.com/sainasharma2007/mern-16.git | www.linkedin.com/in/saina-sharma-b5a704379</p>
     </div>
+
+    
+    <div class="left">
+      <div class="section">
+        <h2>Address</h2>
+        <p>B-12, First Floor, Gagan Enclave, Ghaziabad, Uttar Pradesh</p>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <p><b>Technical:</b></p>
+        <ul>
+          <li>C, Python, HTML, CSS</li>
+          <li>Git/Github</li>
+        </ul>
+        <p><b>Soft:</b></p>
+        <ul>
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Leadership</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+
+      
+    </div>
+
+   
+    <div class="right">
+      <div class="section">
+        <h2>Education</h2>
+        <p>10th ICSE - Holy Child School, Ghaziabad || 92% </p>
+        <p>12th CBSE - KDB Public School, Ghaziabad || 75% </p>
+        <p>B.Tech CSE-DS - ABES Institute of Technology (currently persuing)</p>
+      </div>
+
+
+      <div class="section">
+        <h2>Organization</h2>
+        <p>Dr. APJ Abdul Kalam Technical University (AKTU)</p>
+        <p> ABES Institute Of Technology, Ghaziabad</p>
+      </div>
+      <div class="section">
+        <h2>Projects</h2>
+        <ul>
+          <li>Automatic Room Light Controller (IoT)</li>
+          <p>"IoT-based system that automatically switches room lights ON/OFF based on presence and light, saving energy."</p><br>
+          <li>Al-Based Internship Recommendation Engine for PM Internship Scheme</li>
+          <p>"The problem seeks to build a simple, lightweight AI-based recommendation engine that suggests the most relevant internships to each candidate based on their profile, academic background, interests, and location preferences."</p><br>
+          <li>NITIPATH</li>
+          <p>"NitiPath simplifies government policies, updates, and initiatives for easy public understanding."</p><br>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+  </div>
 </body>
 </html>
