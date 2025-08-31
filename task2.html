@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #parent{
+            background-color: beige;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: "H H H H H H H "
+            "H H H H H H H"
+            "H H H H H H H"
+            "SB C C C C C C"
+            "SB C C C C C C"
+            "SB C C C C C C"
+            "SB C C C C C C"
+            "SB C C C C C C";
+            border-radius: 12px;
+           
+         }
+         #header{
+            grid-area: H;
+            background-color: slategray;
+            margin: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+         }
+         #sidebar{
+            grid-area: SB;
+            background-color: rgb(62, 100, 138);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+         }
+         #content{
+            grid-area: C;
+            background-color: rgb(24, 78, 132);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items:center;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+         }
+         #content1{
+            background-color: antiquewhite;
+            color: black;
+            padding: 1rem;
+            font-size: 20px;
+         }
+         #content2{
+            background-color: antiquewhite;
+            color: black;
+            padding: 1rem;
+             font-size: 20px;
+         }
+         #content3 b{
+            font-size: 2rem;
+            
+         } 
+          #content3 span{
+            font-size: 20px;
+           
+         }
+           
+         #content3{
+             background-color: bisque;
+            color: black;
+            padding: 1rem;
+         } 
+         
+         #content4 b{
+            font-size: 2rem;
+            
+         }
+         #content4 span{
+            font-size: 20px;
+           
+         }
+         #content4 {
+             background-color: bisque;
+            color: black;
+            padding: 1rem;
+         }
+         #content5 b{
+            font-size: 2rem;
+         }
+         #content5 span{
+            font-size: 20px;
+         }
+         #content5{
+            background-color: blanchedalmond;
+            color: black;
+            padding: 1rem;
+         }
+         #content6 b{
+              font-size: 2rem;
+         }
+         #content6 span{
+            font-size: 20px;
+         }
+         #content6{
+            background-color: blanchedalmond;
+            color: black;
+            padding: 1rem;
+         }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="header">
+            <p style="font-size: 2rem;  color: black; background-color: azure;border-radius: 100%; padding: 1rem; position: fixed; left: 37rem; top: 2rem;"><b>Saina Sharma</b></p>
+            <h1 id="content1">Contact num.- 9958838046<br>
+            Email id- sainasharma961@gmail.com<br>
+            Linkdln id-<a href="https://www.linkedin.com/in/saina-sharma-b5a704379" target="_blank">click me</a></h1>
+            <h2 id="content2">Github id- sainasharma2007</h2>
+        </div>
+        <div id="sidebar">
+            <h3 id="content3"><b>ADDRESS</b><br><br>
+            <span>B-12, First Floor, Gagan Enclave, Ghaziabad</span></h3>
+            <h4 id="content4"><b>SKILLS</b><br><br>
+            <span>Technical Skills</span><br><br>
+            <ul style="font-size: 14px;" >Programming Languages: C, Python<br>
+             Development Basics: HTML, CSS<br>
+            Version Control: Git, Github<br><br></ul>
+            <span>Soft Skills</span><br><br>
+            <ul style="font-size: 14px;">Strong Communication Skills<br>
+            Leadership Qualities<br>
+            Adaptability<br></ul></h4>
+        </div>
+        <div id="content">
+          <h5 id="content5"><b>EDUCATION</b><br><br>
+         <span>10th ICSE- Holy Child School<br>
+            12th CBSE- KDB Public School<br>
+            B.Tech CSE-DS- ABES Institute Of Technology
+         </span></h5>
+          <h6 id="content6"><b>ORGANIZATION</b><br><br>
+         <span>Dr. APJ Abdul Kalam Technical University<br>
+         ABES Institute Of Technology<br>
+         Department CSE-DS</span></h6>
+        </div>
+    </div>
+</body>
+</html>
