@@ -4,3 +4,5 @@ Task 2 is a resume building project.
 It is designed using flex, grid and positioning.
 By clicking on the task shown in task2.html file, you will be shown a code which was pushed before making changes.
 The new code will be shown on clicking the task2.html file and not the Task one.
+The files will be shown by clicking on the .html file and not on the middle one where task3 is written.
+While pushing, all the files were pushed under the task3 file thats why this issue occured. 
